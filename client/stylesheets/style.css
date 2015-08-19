@@ -1,0 +1,21 @@
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    /*margin-right:-50px;*/
+}
+.col-centered-text-center {
+    display:inline-block;
+    float:none;
+    text-align:center;
+}
+
+.trash-item {
+    border:1px solid lightgrey;
+}
