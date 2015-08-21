@@ -15,3 +15,5 @@ alanning:roles
 twbs:bootstrap
 fortawesome:fontawesome
 mrt:flash-messages
+accounts-ui
+aldeed:autoform-select2

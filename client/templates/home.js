@@ -1,6 +1,6 @@
 Template.home.created = function() {
   Session.set('search', "");
-  Meteor.subscribe('trashs')
+  Meteor.subscribe('trashs');
 }
 
 Template.home.rendered = function() {

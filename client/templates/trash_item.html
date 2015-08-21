@@ -4,7 +4,15 @@
       <div class="media-left">
         <img src="http://pipsum.com/100x100.jpg">
       </div>
-      <div class="media-body">{{title}}</div>
+      <div class="media-body">
+        <div><b>{{title}}</b></div>
+      <div>
+        {{#each materialsTags}}
+          <a href="#{{slug}}" class="btn btn-default">{{title}}</a>
+        {{/each}}
+      </div>
+      <div>à jeter dans : {{bestGarbage}}</div>
+      </div>
     </div>
   </div>
 </template>
