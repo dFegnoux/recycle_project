@@ -8,18 +8,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{pathFor 'home'}}">Exo Meteor</a>
+        <a class="navbar-brand" href="{{pathFor 'home'}}">Recycle project</a>
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
           <li class="menu">
-            <a href="{{pathFor 'teamsList'}}">Teams</a>
+            <a href="#">menu 1</a>
           </li>
           <li class="menu">
-            <a href="{{pathFor 'playersList'}}">Players</a>
+            <a href="#">menu 2</a>
           </li>
           <li class="menu">
-            <a href="#">Search</a>
+            <a href="#">menu 3</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="signup-btn">
+            {{> loginButtons}}
           </li>
         </ul>
       </div>

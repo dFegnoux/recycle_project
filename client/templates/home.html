@@ -1,3 +1,19 @@
 <template name="home">
   <h1>Hello world !</h1>
+  <div class="row row-centered">
+    <form class="col-sm-8 col-xs-12 col-centered form-group">
+      <input class="search form-control" name="search" placeholder="Quel déchet cherchez vous ?"> 
+    </form>
+  </div>
+  {{#with searchedTrashs}}
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          {{#each searchedTrashs}}
+            <div class="col-sm-4">{{> trashItem}}</div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  {{/with}}
 </template>
