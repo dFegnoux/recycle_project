@@ -1,4 +1,6 @@
 <template name="materialPage">
-  <h1>{{material.name}}</h1>
-  <h2>Poubelle : {{material.garbage}}</h2>
+  {{#with material}}
+    <h1>{{material.title}}</h1>
+    <h2>Poubelle : {{material.garbageName}}</h2>
+  {{/with}}
 </template>

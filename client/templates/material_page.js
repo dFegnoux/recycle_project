@@ -1,5 +1,7 @@
 Template.materialPage.helpers({
   material: function() {
-    return Materials.findOne({ slug: this.params.slug });
+    var slug = Router.current().params.materialSlug;
+    if(slug)
+      return Materials.findOne({ slug: slug });
   }
 });
