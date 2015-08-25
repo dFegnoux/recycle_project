@@ -1,4 +1,7 @@
-Meteor.publish('trashs', function() {
-  this.unblock();
-  return [Trashs.find(), Types.find(), Materials.find(), Garbages.find()];
+Meteor.publish('teamsList', function() {
+  return Teams.find();
+});
+
+Meteor.publish('playersList', function() {
+  return Players.find();
 });
